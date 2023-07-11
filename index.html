@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Text Editor</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet"
+</head>
+<body>
+<div class="container">
+  <div class="options">
+    <select id="fontName" class="adv-option-button"></select>
+    <select id="fontSize" class="adv-option-button"></select>
+    <button id="bold" class="option-button format" ><i class="fa-sharp fa-solid fa-bold"></i></button>
+    <button id="italic" class="option-button format"><i class="fa-sharp fa-solid fa-italic"></i></button> 
+    <button id="underline" class="option-button format"><i class="fa-sharp fa-solid fa-underline"></i></button>
+    <button id="strikethrough" class="option-button format"><i class="fa-sharp fa-solid fa-strikethrough"></i></button>
+    <button id="superscript" class="option-button script"><i class="fa-sharp fa-solid fa-superscript"></i></button>
+    <button id="subscript" class="option-button script"><i class="fa-sharp fa-solid fa-subscript"></i></button>
+    <button id="smallcaps" class="option-button smallcaps" onclick="f1(this)">Aa</i></button>
+    <!--list-->
+    <button id="insertOrderedList" class="option-button"><i class="fa-solid fa-list-ol"></i></button>
+    <button id="insertUnorderedList" class="option-button"><i class="fa-solid fa-list-ul"></i></button>
+    <!--undo/redo-->
+    <button id="undo" class="option-button"><i class="fa-solid fa-rotate-left"></i></button>    
+    <button id="redo" class="option-button"><i class="fa-solid fa-rotate-right"></i></button>
+    <button id="createLink" class="adv-option-button"><i class="fa-solid fa-link"></i></button>
+    <button id="unlink" class="option-button"><i class="fa-solid fa-unlink"></i></button>    
+    <button id="justifyLeft" class="option-button align"><i class="fa-solid fa-align-left"></i></button> 
+    <button id="justifyCenter" class="option-button align"><i class="fa-solid fa-align-center"></i></button>
+    <button id="justifyRight" class="option-button align"><i class="fa-solid fa-align-right"></i></button> 
+    <button id="justifyFull" class="option-button align"><i class="fa-solid fa-align-justify"></i></button> 
+    <button id="outdent" class="option-button spacing"><i class="fa-solid fa-outdent"></i></button> 
+    <button id="indent" class="option-button spacing"><i class="fa-solid fa-indent"></i></button>   
+    <button id="show-code" class="option-button" data-active="false" onclick="f2(this)">&lt;/&gt;</button>    
+    <div class="input-wrapper">
+     <input type="color" id="foreColor" class="adv-option-button" />
+          <label for="foreColor">Font Color</label>
+    </div><!--input wrapper class div-->
+    <div class="input-wrapper">
+        <input type="color" id="backColor" class="adv-option-button" />
+          <label for="backColor">Highlight Color</label>
+    </div><!--input wrapper class div-->
+    </div><!--options end-->
+    <div id="text-input" contenteditable="true" spellcheck="false"></div>
+    </div>
+</div><!--container end-->
+  <script src="js/script.js"></script>
+</body>
+</html>
